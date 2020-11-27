@@ -1,0 +1,98 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'kotlin-android-extensions'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.padcx.mmz.myhealthcare"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation project(":shared")
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation rootProject.ext.libraries.ktx
+
+    // App dependencies
+    implementation rootProject.ext.libraries.appCompat
+    implementation rootProject.ext.libraries.constraintLayout
+    implementation rootProject.ext.libraries.material
+    implementation rootProject.ext.libraries.swiperefreshlayout
+    implementation rootProject.ext.libraries.youtube
+
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+    //Glide
+    implementation rootProject.ext.libraries.glide
+    annotationProcessor rootProject.ext.libraries.glideAnnotion
+
+    //GSON
+    implementation rootProject.ext.libraries.gson
+
+
+    //OKHttp
+    implementation rootProject.ext.libraries.okhttp
+
+    // Room Database
+    implementation rootProject.ext.libraries.room
+    kapt rootProject.ext.libraries.roomcompiler
+
+    // Architecture Components
+    // LiveData
+    implementation rootProject.ext.libraries.livedata
+    kapt rootProject.ext.libraries.livecycle_arch_compiler
+    implementation rootProject.ext.libraries.lifecycle_arch_extension
+    kapt rootProject.ext.libraries.lifecycle_compiler
+    implementation rootProject.ext.libraries.lifecycle_extensions
+    implementation rootProject.ext.libraries.lifecycle_viewModel
+
+    //Testing
+    // Local Unit Tests
+    testImplementation rootProject.ext.libraries.junit
+    testImplementation rootProject.ext.libraries.junitktx
+    testImplementation rootProject.ext.libraries.corektx
+    testImplementation rootProject.ext.libraries.mockk
+    testImplementation rootProject.ext.libraries.mockito
+    testImplementation rootProject.ext.libraries.roboelectric
+
+
+    // Import the BoM for the Firebase platform
+    implementation platform(rootProject.ext.libraries.firebaseBom)
+    implementation rootProject.ext.libraries.firebaseAuthKtx
+    implementation rootProject.ext.libraries.firebaseAnalytics
+    implementation rootProject.ext.libraries.firebaseDatabaseKtx
+    implementation rootProject.ext.libraries.firebaseFirestoreKtx
+    implementation rootProject.ext.libraries.firebaseConfigKtx
+    implementation rootProject.ext.libraries.firebaseStorageKtx
+}
