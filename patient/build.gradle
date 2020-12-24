@@ -4,6 +4,7 @@ plugins {
     id 'kotlin-kapt'
     id 'com.google.gms.google-services'
     id 'kotlin-android-extensions'
+    id 'com.google.firebase.crashlytics'
 }
 
 android {
@@ -60,13 +61,18 @@ dependencies {
     //GSON
     implementation rootProject.ext.libraries.gson
 
+    //Retrofit
+    implementation rootProject.ext.libraries.retrofit
+    implementation rootProject.ext.libraries.retrofit_converter
+    implementation rootProject.ext.libraries.retrofit_adpter
+
+    //RxKotlin
+    implementation rootProject.ext.libraries.rxkotlin
+    implementation rootProject.ext.libraries.rxandroid
+    implementation rootProject.ext.libraries.rxjava
 
     //OKHttp
     implementation rootProject.ext.libraries.okhttp
-
-    // Room Database
-    implementation rootProject.ext.libraries.room
-    kapt rootProject.ext.libraries.roomcompiler
 
     // Architecture Components
     // LiveData
@@ -77,6 +83,15 @@ dependencies {
     implementation rootProject.ext.libraries.lifecycle_extensions
     implementation rootProject.ext.libraries.lifecycle_viewModel
 
+    // Room Database
+    implementation rootProject.ext.libraries.room
+    kapt rootProject.ext.libraries.roomcompiler
+
+    //Exo Player
+    implementation rootProject.ext.libraries.exoplayer_core
+    implementation rootProject.ext.libraries.exoplayer_dash
+    implementation rootProject.ext.libraries.exoplayer_ui
+
     //Testing
     // Local Unit Tests
     testImplementation rootProject.ext.libraries.junit
@@ -85,6 +100,17 @@ dependencies {
     testImplementation rootProject.ext.libraries.mockk
     testImplementation rootProject.ext.libraries.mockito
     testImplementation rootProject.ext.libraries.roboelectric
+
+    // Tests that require Android Device
+    androidTestImplementation rootProject.ext.libraries.junit
+    androidTestImplementation rootProject.ext.libraries.expressoCore
+    androidTestImplementation rootProject.ext.libraries.testRule
+    androidTestImplementation rootProject.ext.libraries.testRunner
+    androidTestImplementation rootProject.ext.libraries.testCore
+    androidTestImplementation rootProject.ext.libraries.testExtktx
+    androidTestImplementation rootProject.ext.libraries.expressoContrib
+    androidTestImplementation rootProject.ext.libraries.mockitoAndroid
+    androidTestImplementation rootProject.ext.libraries.testExt
 
 
     // Import the BoM for the Firebase platform
@@ -95,4 +121,19 @@ dependencies {
     implementation rootProject.ext.libraries.firebaseFirestoreKtx
     implementation rootProject.ext.libraries.firebaseConfigKtx
     implementation rootProject.ext.libraries.firebaseStorageKtx
+    implementation rootProject.ext.libraries.firebaseInAppMessageKtx
+    implementation rootProject.ext.libraries.firebaseCrashlyticsKtx
+    implementation rootProject.ext.libraries.firebaseMessageKtx
+    implementation rootProject.ext.libraries.firebaseDeepLinkKtx
+
+    //MMDetect
+    implementation rootProject.ext.libraries.mmdetect
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.google.firebase:firebase-core:17.3.0'
+
+    //Retrofit
+    implementation rootProject.ext.libraries.retrofit
+    implementation rootProject.ext.libraries.retrofit_converter
+    implementation rootProject.ext.libraries.retrofit_adpter
+
 }

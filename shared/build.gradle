@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -33,12 +35,74 @@ android {
 }
 
 dependencies {
-
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.2.1'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation rootProject.ext.libraries.ktx
+
+    // App dependencies
+    implementation rootProject.ext.libraries.appCompat
+    implementation rootProject.ext.libraries.constraintLayout
+    implementation rootProject.ext.libraries.material
+
+    //Glide
+    implementation rootProject.ext.libraries.glide
+    annotationProcessor rootProject.ext.libraries.glideAnnotion
+
+    //GSON
+    implementation rootProject.ext.libraries.gson
+
+
+    //OKHttp
+    implementation rootProject.ext.libraries.okhttp
+
+    // Room Database
+    implementation rootProject.ext.libraries.room
+    kapt rootProject.ext.libraries.roomcompiler
+
+    //RxKotlin
+    implementation rootProject.ext.libraries.rxkotlin
+    implementation rootProject.ext.libraries.rxandroid
+    implementation rootProject.ext.libraries.rxjava
+
+    // Architecture Components
+    // LiveData
+    implementation rootProject.ext.libraries.livedata
+    kapt rootProject.ext.libraries.livecycle_arch_compiler
+    implementation rootProject.ext.libraries.lifecycle_arch_extension
+    kapt rootProject.ext.libraries.lifecycle_compiler
+    implementation rootProject.ext.libraries.lifecycle_extensions
+    implementation rootProject.ext.libraries.lifecycle_viewModel
+
+    //Testing
+    // Local Unit Tests
+    testImplementation rootProject.ext.libraries.junit
+    testImplementation rootProject.ext.libraries.junitktx
+    testImplementation rootProject.ext.libraries.corektx
+    testImplementation rootProject.ext.libraries.mockk
+    testImplementation rootProject.ext.libraries.mockito
+    testImplementation rootProject.ext.libraries.roboelectric
+
+
+    // Import the BoM for the Firebase platform
+    implementation platform(rootProject.ext.libraries.firebaseBom)
+    implementation rootProject.ext.libraries.firebaseAuthKtx
+    implementation rootProject.ext.libraries.firebaseAnalytics
+    implementation rootProject.ext.libraries.firebaseDatabaseKtx
+    implementation rootProject.ext.libraries.firebaseFirestoreKtx
+    implementation rootProject.ext.libraries.firebaseConfigKtx
+    implementation rootProject.ext.libraries.firebaseStorageKtx
+
+    //MMDetect
+    implementation rootProject.ext.libraries.mmdetect
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.google.firebase:firebase-core:17.3.0'
+  /*  implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation "com.google.firebase:firebase-core:17.2.1"*/
+
+    //Retrofit
+    implementation rootProject.ext.libraries.retrofit
+    implementation rootProject.ext.libraries.retrofit_converter
+    implementation rootProject.ext.libraries.retrofit_adpter
+
 }

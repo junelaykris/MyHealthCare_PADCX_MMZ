@@ -1,3 +1,247 @@
 <resources>
     <string name="app_name">MyHealthCare</string>
+
+    <string name="speciality_title">ရောဂါအမျိုးအစားများ</string>
+    <string name="recent_consultation">မကြာသေးခင်ကဆွေးနွေးမှုများ</string>
+    <string name="speciality">အမျိုးအစား</string>
+    <string name="consultation">ချိန်းဆိုမှုများ</string>
+    <string name="account">အကောင့် </string>
+    <string name="username">အမည်</string>
+    <string name="email">အီးမေးလ် လိပ်စာ</string>
+    <string name="password">စကားဝှက်</string>
+    <string name="register">အကောင့်ပြုလုပ်မည်</string>
+    <string name="register_account">အကောင့် အသစ်ပြုလုပ်ရန်</string>
+    <string name="alreadyhaveanaccount">အကောင့်ရှိပြီးသားလား ?</string>
+    <string name="login">အကောင့်ဝင်ပါ</string>
+    <string name="login_btn_txt">အကောင့်ဝင်မည်</string>
+
+    <string name="have_no_account">အကောင့်မရှိသေးဘူးလား ?</string>
+    <string name="create_new_account">အကောင့်အသစ်ပြုလုပ်ပါ</string>
+    <string name="consultation_confirm">ဆွေးနွေးမှုအတည်ပြုချက်</string>
+    <string name="consultation_confirm_message">ဆိုင်ရာ ဆရာဝန် နှင့် တိုင်ပင်ဆွေးနွေးရန်  Consultation Request ပြုလုပ်မှာသေချာပါသလား?</string>
+    <string name="cancel">မလုပ်တော့ပါ</string>
+    <string name="sure">သေချာပါသည်</string>
+    <string name="patient_info">လူနာအချက်အလက် များဖြည့်ပါ</string>
+    <string name="consultation_message">ဆွေးနွေးမှု ပြုလုပ်နိုင်ပါ ပြီ</string>
+
+    <string name="general_question">အထွေထွေမေးခွန်းများ</string>
+    <string name="special_question">ရောဂါဆိုင်ရာမေးခွန်းများ</string>
+
+    <string name="patient_dob">မွေးနေ့</string>
+    <string name="patient_height">အရပ်</string>
+    <string name="patient_blood_type">သွေး အုပ်စု အမျိုးအစား</string>
+    <string name="patient_weight">ခန္ဓာကိုယ် ပေါင်ချိန်</string>
+    <string name="patient_blood_pressure">သွေးပေါင်ချိန်</string>
+    <string name="patient_avoid_medicine">မတည့်သောဆေး</string>
+    <string name="patient_reaction_alert_hint">မတည့်သောဆေးရှိလျင်ရေးသားပေးပါ</string>
+    <string name="ft">ft</string>
+    <string name="lb">lb</string>
+    <string name="mmhg">mmHg</string>
+    <string name="continue_btn">ဆက်ရန်</string>
+
+    <string name="patient_name">လူနာအမည်</string>
+    <string name="dob">မွေးနေ့</string>
+    <string name="height">အရပ်</string>
+    <string name="bloodType">သွေး အုပ်စု အမျိုးအစား</string>
+    <string name="weight">ခန္ဓာကိုယ် ပေါင်ချိန်</string>
+    <string name="bloodPressure">သွေးပေါင်ချိန်</string>
+    <string name="allergicMedicine">မတည့်သောဆေး</string>
+    <string name="hint_answer">Your Answer</string>
+    <string name="start_consultation">ချိန်းဆိုမှုပြုလုပ်မည်</string>
+    <string name="confirm_info">အချက်အလက်များအားအတည်ပြုပါ</string>
+    <string name="patient_detail">လူနာအချက်အလက် များ</string>
+    <string name="consultation_request_message">ဆိုင်ရာ ဆရာဝန် နှင့် တိုင်ပင်ဆွေးနွေးရန်  Consultation Request ပြုလုပ်မှာသေချာပါသလား?</string>
+    <string name="doctor_background">ပါမောကွ  ကြီးသည် UK မှ ဂုဏ်ထူးဆောင် မဟာ ပါရ၈ူဘွဲ့ကို ရရှိထားပြီး ယခုအချိန်တွင်SSC Hospital မှာ တာဝန်ယူကုသပေးနေပါသည်</string>
+
+    <string name="medicine_history">ဆေးမှတ်တမ်း</string>
+    <string name="prescription">ဆေးညွန်း</string>
+    <string name="question">မေးခွန်းများ</string>
+    <string name="compose">ရေးသားပါ</string>
+    <string name="order_prescription">ဆေးညွန်းမှာယူမည်</string>
+    <string name="send">စာပို့မည်</string>
+    <string name="chat_history">ချိန်းဆိုမှုမှတ်တမ်းများ</string>
+    <string name="start_discuss_date">ဆွေးနွေးမှု ပြုလုပ်သည့် ရက်စွဲ</string>
+    <string name="close">ပိတ်မည်</string>
+    <string name="amount">ပမာဏ</string>
+    <string name="quality">အရေအတွက်</string>
+    <string name="delay_time">ကြာချိန်</string>
+    <string name="comment">မှတ်ချက်</string>
+    <string name="count">အကြိမ်အရေတွက်</string>
+    <string name="address">လိပ်စာ</string>
+    <string name="order">မှာယူမည်</string>
+    <string name="state">တိုင်း/ ပြည်နယ်</string>
+    <string name="township">မြို့နယ်</string>
+    <string name="full_address">လိပ်စာအပြည့်အစုံ</string>
+    <string name="choose_address">လိပ်စာရွေးချယ်ပါ</string>
+    <string name="new_address">လိပ်စာအသစ်</string>
+
+    <string name="checkout">ငွေပေးချေမှုအတည်ပြုပြီးနောက်နေ့တစ်ရက်မှစပြီး ဆေးများကိုလိုက်လန်ပို့ဆောင်ပေးမည်</string>
+
+
+    <string name="add">ထည့်မည်</string>
+
+
+
+    <string-array name="bloodType">
+        <item>A သွေး</item>
+        <item>B သွေး</item>
+        <item>O သွေး</item>
+        <item>AB သွေး</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sept</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string-array name="years">
+        <item>1990</item>
+        <item>1991</item>
+        <item>1992</item>
+        <item>1993</item>
+        <item>1994</item>
+        <item>1995</item>
+        <item>1996</item>
+        <item>1997</item>
+        <item>1998</item>
+        <item>1999</item>
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+
+
+
+    <string-array name="state">
+        <item>ရန်ကုန်</item>
+        <item>နေပြည်တော်</item>
+        <item>ပဲခူး</item>
+        <item>ရှမ်း</item>
+        <item>ကချင်</item>
+        <item>ကယား</item>
+        <item>ကရင်</item>
+        <item>ချင်း</item>
+        <item>ရခိုင်</item>
+        <item>မွန်</item>
+        <item>စစ်ကိုင်</item>
+        <item>တနင်္သာရီ</item>
+        <item>မကွေး</item>
+        <item>မန္တလေး</item>
+        <item>ဧရာဝတီ</item>
+    </string-array>
+
+    <string-array name="yangon">
+        <item> ကမာရွတ်မြို့ </item>
+        <item> ကျောက်တံတားမြို့ </item>
+        <item>   ကျောက်တန်းမြို့ </item>
+        <item>   ကြည့်မြင်တိုင်မြို့ </item>
+        <item>    ကွမ်းခြံကုန်းမြို့ </item>
+        <item>    ကိုကိုးကျွန်းမြို့ </item>
+        <item>    ကော့မှူးမြို့ </item>
+        <item>  ခရမ်းမြို့ </item>
+        <item>  စမ်းချောင်းမြို့ </item>
+        <item>  ဆိပ်ကမ်းမြို့ </item>
+        <item>   ဆိပ်ကြီးခနောင်တိုမြို့ </item>
+        <item>   တံတားမြို့ </item>
+        <item>    တွံတေးမြို့</item>
+        <item>  တာမွေမြို့</item>
+        <item>    တိုက်ကြီးမြို့</item>
+        <item>    တောင်ဥက္ကလာပမြို့</item>
+        <item>    ထန်းတပင်မြို့</item>
+        <item>     ထောက်ကြံ့မြို့</item>
+        <item>    ဒဂုံမြို့</item>
+        <item>    ဒဂုံမြို့သစ်တောင်ပိုင်း</item>
+        <item>    ဒဂုံမြို့သစ်မြောက်ပိုင်း</item>
+        <item>    ဒဂုံမြို့သစ်ဆိပ်ကမ်း</item>
+        <item>     ဒဂုံမြို့သစ်အရှေ့ပိုင်း</item>
+        <item>     ဒလမြို့</item>
+        <item>     ဒေါပုံမြို့</item>
+        <item>     ပန်းဘဲတန်းမြို့</item>
+        <item>      ပုဇွန်တောင်မြို့</item>
+        <item>     ဗဟန်းမြို့</item>
+        <item>      ဗိုလ်တထောင်မြို့</item>
+        <item>     မင်္ဂလာတောင်ညွန့်မြို့</item>
+        <item>     မရမ်းကုန်းမြို့</item>
+        <item>      မြောက်ဥက္ကလာပမြို့</item>
+        <item>     မှော်ဘီမြို့</item>
+        <item>     ရန်ကင်းမြို့</item>
+        <item>     ရန်ကုန်မြို့</item>
+        <item>      ရွှေပြည်သာမြို့</item>
+        <item>    လမ်းမတော်မြို့</item>
+        <item>     လသာမြို့</item>
+        <item>     လှည်းကူးမြို့</item>
+        <item>     လှိုင်မြို့</item>
+        <item>     လှိုင်သာယာမြို့</item>
+        <item>     သင်္ဃန်းကျွန်းမြို့</item>
+        <item>      သန်လျင်မြို့</item>
+        <item>      သာကေတမြို့</item>
+        <item>       သုံးခွမြို့</item>
+        <item>       အင်းစိန်မြို့</item>
+        <item>      အဖျောက်မြို့</item>
+        <item>       အလုံမြို့</item>
+        <item>      ဥက္ကံမြို့</item>
+    </string-array>
+
 </resources>

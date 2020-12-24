@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_speciality"
+        android:title="@string/speciality"
+        android:icon="@drawable/ic_baseline_house_24"/>
+
+    <item
+        android:id="@+id/action_chat"
+        android:title="@string/consultation"
+        android:icon="@drawable/ic_baseline_chat_24"/>
+
+    <item
+        android:id="@+id/action_account"
+        android:title="@string/account"
+        android:icon="@drawable/ic_baseline_account_circle_24"/>
+
+</menu>

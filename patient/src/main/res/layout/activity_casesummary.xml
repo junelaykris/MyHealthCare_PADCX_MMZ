@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/nested_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/margin_medium"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/patient_info"
+                android:textSize="@dimen/subtitle_text_size" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout_menu">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/page_background">
+
+            <RelativeLayout
+                android:id="@+id/layout_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5x"
+                android:gravity="center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toStartOf="@+id/tv_special_question"
+                    android:layout_toEndOf="@+id/tv_general"
+                    android:gravity="center_horizontal"
+                    android:weightSum="1">
+
+                    <View
+                        android:id="@+id/view_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_weight="1"
+                        android:background="@color/grey_400" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/tv_general"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="100dp"
+                    android:background="@drawable/selected_bg_color"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_baseline_check_24"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <org.mmtextview.components.MMTextView
+                    android:id="@+id/lbl_general_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_general"
+                    android:layout_marginLeft="@dimen/margin_6x"
+                    android:layout_marginTop="@dimen/margin_1x"
+                    android:gravity="center"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/general_question"
+                    android:textColor="@color/cyan_900"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/tv_special_question"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/selected_bg_color"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_baseline_check_24"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <org.mmtextview.components.MMTextView
+                    android:id="@+id/lbl_specialquestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_special_question"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/margin_1x"
+                    android:layout_marginRight="@dimen/margin_6x"
+                    android:gravity="center"
+                    android:text="@string/special_question"
+                    android:textColor="@color/teal_700"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_question"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin_3x"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_question" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

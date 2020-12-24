@@ -102,4 +102,18 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha04'
+
+    //MMDetect
+    implementation rootProject.ext.libraries.mmdetect
+
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation "com.google.firebase:firebase-core:17.2.1"
+
+    //Retrofit
+    implementation rootProject.ext.libraries.retrofit
+    implementation rootProject.ext.libraries.retrofit_converter
+    implementation rootProject.ext.libraries.retrofit_adpter
+
+
 }

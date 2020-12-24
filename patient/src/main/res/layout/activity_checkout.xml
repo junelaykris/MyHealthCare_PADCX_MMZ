@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/checkoutback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_grey_back_24"
+            android:gravity="center"
+            android:text="@string/order_prescription"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:elevation="2dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/title_color"
+                            android:gravity="left"
+                            android:padding="10dp"
+                            android:text="@string/prescription"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/prescription_rct"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/grey_400" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="စုစုပေါင်းကျသင့်ငွေ"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/total_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_margin="10dp"
+                                android:text="0 Kyats"
+                                android:textColor="@color/black"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/list_addresscard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:elevation="2dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="4dp"
+                            android:background="@color/title_color"
+                            android:gravity="left"
+                            android:padding="10dp"
+                            android:text="@string/address"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:orientation="vertical">
+
+                            <!--<androidx.cardview.widget.CardView
+                                android:id="@+id/new_addresscard"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:elevation="2dp"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardCornerRadius="1dp"
+                                app:cardElevation="2dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/shipping_cancel"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="right"
+                                        android:layout_margin="8dp"
+                                        android:src="@drawable/android_cancel"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="4dp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/state"
+                                                android:textColor="@color/black"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+                                            <androidx.cardview.widget.CardView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_margin="6dp"
+                                                app:cardBackgroundColor="@color/white"
+                                                app:cardCornerRadius="5dp"
+                                                app:cardElevation="3dp">
+
+                                                <Spinner
+                                                    android:id="@+id/state_spinner"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="5dp"
+                                                    android:entries="@array/state"
+                                                    android:padding="5dp"
+                                                    android:spinnerMode="dialog" />
+                                            </androidx.cardview.widget.CardView>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/margin_1x"
+                                                android:text="@string/township"
+                                                android:textColor="@color/black"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+                                            <androidx.cardview.widget.CardView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_margin="6dp"
+                                                app:cardBackgroundColor="@color/white"
+                                                app:cardCornerRadius="10dp"
+                                                app:cardElevation="3dp">
+
+                                                <Spinner
+                                                    android:id="@+id/township_spinner"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="5dp"
+                                                    android:entries="@array/yangon"
+                                                    android:padding="5dp"
+                                                    android:spinnerMode="dialog" />
+                                            </androidx.cardview.widget.CardView>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <org.mmtextview.components.MMTextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_marginTop="3dp"
+                                        android:text="@string/full_address"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp" />
+
+                                    <androidx.appcompat.widget.AppCompatEditText
+                                        android:id="@+id/ed_address"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="6dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="6dp"
+                                        android:layout_marginBottom="18dp"
+                                        android:background="@drawable/bg_rounded_border_grey"
+                                        android:gravity="left"
+                                        android:hint="@string/address"
+                                        android:inputType="textMultiLine"
+                                        android:lines="3"
+                                        android:maxLength="2000"
+                                        android:maxLines="3"
+                                        android:padding="10dp"
+                                        android:scrollbars="vertical"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp" />
+
+                                    <org.mmtextview.components.MMTextView
+                                        android:id="@+id/btn_add"
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/margin_3x"
+                                        android:background="@drawable/rounded_corner_blue"
+                                        android:gravity="center_horizontal"
+                                        android:padding="@dimen/margin_3x"
+                                        android:text="@string/add"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>-->
+
+                            <org.mmtextview.components.MMTextView
+                                android:id="@+id/txtAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/choose_address"
+                                android:textColor="@color/black"
+                                android:textSize="13sp"
+                                android:visibility="visible" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/address_rc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/add_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/bg_rounded_border_grey"
+                                android:drawableLeft="@drawable/ic_baseline_add_circle_outline_24"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="လိပ်စာအသစ်ထည့် ရန်"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <org.mmtextview.components.MMButton
+            android:id="@+id/btn_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_corner_blue"
+            android:paddingBottom="5dp"
+            android:text="@string/order"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

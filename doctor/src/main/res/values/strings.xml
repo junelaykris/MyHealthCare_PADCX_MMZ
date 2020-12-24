@@ -1,3 +1,115 @@
 <resources>
     <string name="app_name">doctor</string>
+
+    <string name="medicine_history">ဆေးမှတ်တမ်း</string>
+    <string name="prescription">ဆေးညွန်း</string>
+    <string name="remark">မှတ်ချက်</string>
+    <string name="send">စာပို့မည်</string>
+    <string name="choose">ရွေးမည်</string>
+    <string name="choose_discuss_time">ဆွေးနွေးမည့်အချိန်ရွေးမည်</string>
+    <string name="close">ပိတ်မည်</string>
+
+    <string name="booking_history_title">ရက်ချိန်းယူမှုမှတ်တမ်းများ</string>
+    <string name="consultation_request">ရက်ချိန်းယူခြင်းတောင်းဆိုမှု</string>
+    <string name="skip">ကျော်မည်</string>
+    <string name="accept">လက်ခံမည်</string>
+    <string name="next">နောက်မှ</string>
+    <string name="postpone">အချိန်ရွေးမည်</string>
+    <string name="consulted_patient">ဆွေးနွေးခဲ့ဖူးသောလူနာ</string>
+
+    <string name="account">အကောင့် </string>
+    <string name="username">အမည်</string>
+    <string name="email">အီးမေးလ် လိပ်စာ</string>
+    <string name="password">စကားဝှက်</string>
+    <string name="register">အကောင့်ပြုလုပ်မည်</string>
+    <string name="register_account">အကောင့် အသစ်ပြုလုပ်ရန်</string>
+    <string name="alreadyhaveanaccount">အကောင့်ရှိပြီးသားလား ?</string>
+    <string name="login">အကောင့်ဝင်ပါ</string>
+    <string name="login_btn_txt">အကောင့်ဝင်မည်</string>
+
+    <string name="have_no_account">အကောင့်မရှိသေးဘူးလား ?</string>
+    <string name="create_new_account">အကောင့်အသစ်ပြုလုပ်ပါ</string>
+    <string name="phone">ဖုန်းနံပါတ်ထည့်ပါ</string>
+    <string name="degree">ရရှိထားသောဘွဲ့များ</string>
+    <string name="biography">ကိုယ်ရေးရာဇဝင်</string>
+
+    <string name="new_patient">လူနာအသစ်</string>
+
+    <string name="patient_name">လူနာအမည်</string>
+    <string name="dob">မွေးနေ့</string>
+    <string name="height">အရပ်</string>
+    <string name="bloodType">သွေး အုပ်စု အမျိုးအစား</string>
+    <string name="weight">ခန္ဓာကိုယ် ပေါင်ချိန်</string>
+    <string name="bloodPressure">သွေးပေါင်ချိန်</string>
+    <string name="allergicMedicine">မတည့်သောဆေး</string>
+    <string name="hint_answer">Your Answer</string>
+    <string name="start_consultation">ဆွေးနွေးမှုစတင်မည်</string>
+    <string name="confirm_info">အချက်အလက်များအားအတည်ပြုပါ</string>
+    <string name="patient_detail">လူနာအချက်အလက် များ</string>
+    <string name="special_question">ရောဂါဆိုင်ရာမေးခွန်းများ</string>
+    <string name="question">မေးခွန်းများ</string>
+    <string name="compose">ရေးသားပါ</string>
+    <string name="prescription_title">ဆေးညွန်းမည်</string>
+    <string name="search">ရှာမည်</string>
+    <string name="finish_consultation">ဆေးညွှန်းပြီး ဆွေးနွေးမှုကို ပြီးဆုံးမည်</string>
+    <string name="amount">ပမာဏ</string>
+    <string name="quality">အရေအတွက်</string>
+    <string name="delay_time">ကြာချိန်</string>
+    <string name="comment">မှတ်ချက်</string>
+    <string name="count">အကြိမ်အရေတွက်</string>
+
+    <string name="medicine_label">ဆေးကို</string>
+    <string name="before_eating">အစားမစားမှီသောက်ရန်</string>
+    <string name="after_eating">အစားစားပြီးမှ သောက်ရန်</string>
+    <string name="use_medicine">သောက်ရမည့်ရက်</string>
+    <string name="morning">မနက်</string>
+    <string name="afternoon">နေ့</string>
+    <string name="night">ည</string>
+    <string name="add">ထည့်မည်</string>
+    <string name="chat_history">ချိန်းဆိုမှုမှတ်တမ်းများ</string>
+
+    <string name="medical_record">ဆေးကုသမှုမှတ်တမ်း</string>
+    <string name="medical_record_hint">ဆေးကုသမှု မှတ်တမ်းရေးသားရန်</string>
+    <string name="start_discuss_date">ဆွေးနွေးမှု ပြုလုပ်သည့် ရက်စွဲ</string>
+    <string name="save">သိမ်းမည်</string>
+    <string name="know">နားလည်ပီ</string>
+
+
+
+
+    <string-array name="speciality_name_list">
+        <item>နှလုံး အထူးကု </item>
+        <item>သွားနှင့် ခံတွင်း </item>
+        <item>အရေပြားနှင့် အလှပရေးရာ </item>
+        <item>နား ၊ နားခေါင်း ၊ လည်ချောင်း </item>
+        <item>အစာအိမ်နှင့် အူလမ်းကြောင်း</item>
+        <item>အသည်းအထူးကု</item>
+        <item>ဦးနှောက်နှင့် အာရုံကြော </item>
+        <item>သားဖွား ၊ မီးယပ် </item>
+        <item>အရိုးအကြော </item>
+        <item>ကလေးကျန်းမာရေး </item>
+        <item>ဓာတ်မှန် </item>
+        <item>ခွဲစိတ် </item>
+    </string-array>
+
+    <string-array name="speciality_name_list_eng">
+        <item>cardiologist </item>
+        <item>dentist</item>
+        <item>skin specialist</item>
+        <item>ear,nose and throat</item>
+        <item>radiologist</item>
+        <item>hepatics</item>
+        <item>neurologist</item>
+        <item>ultrasound</item>
+        <item>children</item>
+        <item>general physician</item>
+        <item>operation</item>
+    </string-array>
+
+
+    <string-array name="medicine_date">
+        <item> Days</item>
+        <item> Week </item>
+    </string-array>
+
 </resources>

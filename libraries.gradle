@@ -12,6 +12,8 @@ ext {
     retrofitVersion = "2.6.1"
     rxKotlinVersion = "2.4.0"
     rxAndroidVersion = "2.1.1"
+    rxJavaVersion = "2.2.17"
+
     okhttpVersion = "4.1.0"
     swiperefreshlayoutVersion = "1.1.0"
     room_version = "2.2.3"
@@ -30,7 +32,8 @@ ext {
     youtubeVersion = "10.0.5"
     navigationVersion = "2.3.0"
     exoplayerVersion="2.11.5"
-    firebaseBomVersion= "25.12.0"
+    firebaseBomVersion= "26.1.1"
+    mmDetectVersion = "1.5"
 
     libraries = [
             ktx                     : "androidx.core:core-ktx:$ktxVersion",
@@ -53,6 +56,9 @@ ext {
             retrofit_adpter         : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
             rxkotlin                : "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion",
             rxandroid               : "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion",
+
+            rxjava                  : "io.reactivex.rxjava2:rxjava:$rxJavaVersion",
+
             okhttp                  : "com.squareup.okhttp3:okhttp:$okhttpVersion",
             glideAnnotion           : "com.github.bumptech.glide:compiler:$glideVersion",
             swiperefreshlayout      : "androidx.swiperefreshlayout:swiperefreshlayout:$swiperefreshlayoutVersion",
@@ -85,9 +91,18 @@ ext {
             firebaseConfigKtx       : "com.google.firebase:firebase-config-ktx",
             firebaseStorageKtx      : "com.google.firebase:firebase-storage-ktx",
             firebaseInAppMessageKtx : "com.google.firebase:firebase-inappmessaging-display-ktx",
-            firebaseMessageKtx      : "com.google.firebase:firebase-messaging-ktx",
+
             firebaseCrashlyticsKtx  : "com.google.firebase:firebase-crashlytics",
             firebaseDeepLinkKtx     : "com.google.firebase:firebase-dynamic-links-ktx",
+            mmdetect                : "org.mmtextview:mmtextview:$mmDetectVersion",
+
+            retrofit               : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retorfitAdapter        : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+            retrofitGsonConverter  : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            okhttp                 : "com.squareup.okhttp3:okhttp:$okhttpVersion",
+
+            firebaseInAppMessageKtx : "com.google.firebase:firebase-inappmessaging-display-ktx",
+            firebaseMessageKtx      : "com.google.firebase:firebase-messaging-ktx",
 
     ]
 }
